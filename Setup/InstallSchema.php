@@ -31,7 +31,7 @@ $installer->getTable('credit_limit')
 $installer->getConnection()->createTable($table);
 
 $installer->getTable('credit_limit_report')
-            )->addColumn('report_id',\Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,null,['identity' => true, 'unsigned' => true, 'nullable' => false, 'primary' => true],'Report Id')
+            ->addColumn('report_id',\Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,null,['identity' => true, 'unsigned' => true, 'nullable' => false, 'primary' => true],'Report Id')
             ->addColumn('customer_id',\Magento\Framework\DB\Ddl\Table::TYPE_TEXT,255,['nullable' => true],'Customer ID')
             ->addColumn('customer_email',\Magento\Framework\DB\Ddl\Table::TYPE_TEXT,255,['nullable' => true],'Customer Email')
             ->addColumn('order_id',\Magento\Framework\DB\Ddl\Table::TYPE_TEXT,255,['nullable' => true],'Order ID')
@@ -44,7 +44,7 @@ $installer->getTable('credit_limit_report')
             $installer->getConnection()->createTable($table);
 			
 $installer->getTable('credit_limit_wallet')
-            )->addColumn('wallet_id',\Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,null,['identity' => true, 'unsigned' => true, 'nullable' => false, 'primary' => true],'Wallet Id')
+            ->addColumn('wallet_id',\Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,null,['identity' => true, 'unsigned' => true, 'nullable' => false, 'primary' => true],'Wallet Id')
             ->addColumn('from_email',\Magento\Framework\DB\Ddl\Table::TYPE_TEXT,255,['nullable' => true],'From Email')
             ->addColumn('to_email',\Magento\Framework\DB\Ddl\Table::TYPE_TEXT,255,['nullable' => true,'default' => null],'To Email')
             ->addColumn('amount_sent',\Magento\Framework\DB\Ddl\Table::TYPE_TEXT,255,['nullable' => true,'default' => null],'Amount Sent')
@@ -54,9 +54,6 @@ $installer->getTable('credit_limit_wallet')
             $installer->getConnection()->createTable($table);
 
 $installer->endSetup();
-
-
-
 
 
 }
