@@ -22,7 +22,7 @@ $installer->startSetup();
 */
 $table = $installer->getConnection()->newTable(
 $installer->getTable('credit_limit')
-)->addColumn('enitity_id',\Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,null,['identity' => true, 'unsigned' => true, 'nullable' => false, 'primary' => true],'Entity Id')
+->addColumn('enitity_id',\Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,null,['identity' => true, 'unsigned' => true, 'nullable' => false, 'primary' => true],'Entity Id')
 ->addColumn('customer_id',\Magento\Framework\DB\Ddl\Table::TYPE_TEXT,255,['nullable' => true],'Customer ID')
 ->addColumn('customer_email',\Magento\Framework\DB\Ddl\Table::TYPE_TEXT,255,['nullable' => true,'default' => null],'Email ID')
 ->addColumn('credit_limit',\Magento\Framework\DB\Ddl\Table::TYPE_TEXT,255,['nullable' => true,'default' => null],'Credit limit')
