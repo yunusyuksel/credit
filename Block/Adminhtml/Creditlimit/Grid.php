@@ -1,9 +1,4 @@
 <?php
-// @Evry India Pvt Ltd
-?>
-
-<?php
-
 namespace Evry\Creditlimit\Block\Adminhtml\Creditlimit;
 
 class Grid extends \Magento\Backend\Block\Widget\Grid\Container
